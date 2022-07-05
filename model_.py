@@ -1,33 +1,3 @@
-Skip to content
-Product 
-Team
-Enterprise
-Explore 
-Marketplace
-Pricing 
-Search
-Sign in
-Sign up
-vb100
-/
-ml-ops-ci
-Public
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-ml-ops-ci/model.py /
-@vb100
-vb100 Update model.py
-Latest commit 64b26c5 on Mar 24, 2021
- History
- 1 contributor
-102 lines (74 sloc)  2.68 KB
 
 # Import modules and packages
 import tensorflow as tf
@@ -105,7 +75,7 @@ tf.random.set_seed(42)
 
 # Create a model using the Sequential API
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(1), 
+    tf.keras.layers.Dense(10), 
     tf.keras.layers.Dense(1)
     ])
 
@@ -131,18 +101,3 @@ print(f'\nMean Absolute Error = {mae_1}, Mean Squared Error = {mse_1}.')
 # Write metrics to file
 with open('metrics.txt', 'w') as outfile:
     outfile.write(f'\nMean Absolute Error = {mae_1}, Mean Squared Error = {mse_1}.')
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
